@@ -21,6 +21,7 @@
         },
         {
           "name": "GetNewFactIntent",
+          "slots": [],
           "samples": [
             "a fact",
             "a space fact",
@@ -36,8 +37,7 @@
             "give me some space information",
             "tell me something",
             "give me something"
-          ],
-          "slots": []
+          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
@@ -45,5 +45,6 @@
         }
       ]
     }
-  }
+  },
+  "version": "1"
 }
