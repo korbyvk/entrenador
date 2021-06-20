@@ -6,6 +6,10 @@
         "@ask-cli/lambda-deployer": {
           "deployState": {}
         }
+      },
+      "skillId": "amzn1.ask.skill.b2b82af1-c74a-40a6-8622-47e668bb201d",
+      "skillMetadata": {
+        "lastDeployHash": "IfZmXARKl2iZNh4ou1WAeWnG25A="
       }
     }
   }
