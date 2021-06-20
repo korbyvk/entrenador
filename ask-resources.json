@@ -8,21 +8,15 @@
       "code": {
         "default": {
           "src": "./lambda"
-        },
-        "EU": {
-          "src": "./lambda"
-        },
-        "FE": {
-          "src": "./lambda"
         }
       },
       "skillInfrastructure": {
+        "type": "@ask-cli/lambda-deployer",
         "userConfig": {
           "runtime": "nodejs10.x",
           "handler": "index.handler",
           "awsRegion": "us-east-1"
-        },
-        "type": "@ask-cli/lambda-deployer"
+        }
       }
     }
   }
