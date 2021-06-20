@@ -270,7 +270,22 @@ const esData = {
 
 const esesData = {
   translation: {
-    SKILL_NAME: 'Curiosidades del Espacio para España',
+    SKILL_NAME: 'Datos Espaciales',
+    GET_FACT_MESSAGE: 'Aqui va: ',
+    HELP_MESSAGE: 'Puedes preguntarme un dato interesante del espacio, o, cerrar la skill. ¿Cómo te puedo ayudar?',
+    HELP_REPROMPT: '¿Qué necesitas?',
+    FALLBACK_MESSAGE: 'no tengo respuesta para eso pero, puedo contarte cosas guays sobre el espacio. ¡Pregúntame algo!',
+    FALLBACK_REPROMPT: 'Puedo hablarte del espacio ¿Qué quieres saber?',
+    ERROR_MESSAGE: 'Disculpa, ha habido un error.',
+    STOP_MESSAGE: '¡Hasta luego!',
+    FACTS:
+      [
+        'Un año en Mercurio solo dura 88 días.',
+        'Apesar de estar mas lejos que el sol, Venus es mas caliente que Mercurio.',
+        'Visto desde marte, el sol parece ser la mitad del tamaño que vemos desde la tierra.',
+        'Júpiter tiene los días mas cortos de todos los planetas de nuestro sistema solar.',
+        'El sol es casi una esfera perfecta.',
+      ],
   },
 };
 
