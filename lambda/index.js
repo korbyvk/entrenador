@@ -55,7 +55,7 @@ const HelpHandler = {
   handle(handlerInput) {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(requestAttributes.t('HELP_MESSAGE'))
+      .speak('bien')
       .reprompt(requestAttributes.t('HELP_REPROMPT'))
       .getResponse();
   },
