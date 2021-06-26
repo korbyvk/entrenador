@@ -2,14 +2,14 @@
   "askcliStatesVersion": "2020-03-31",
   "profiles": {
     "default": {
-      "skillId": "amzn1.ask.skill.5c78f298-936f-4601-891d-48d82d000ee6",
+      "skillId": "amzn1.ask.skill.7a427706-19f0-4854-a988-c2c71e2c772d",
       "skillInfrastructure": {
         "@ask-cli/lambda-deployer": {
           "deployState": {}
         }
       },
       "skillMetadata": {
-        "lastDeployHash": "sMPJOw0KS/IthMl3vAdijucVzq4=",
+        "lastDeployHash": "ckvsWK3ed3HEj+MffQjMOizpsv0=",
         "eTag": "ae7ac9e4fe7aa06bda868063c8366e06"
       }
     }
