@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "curiosidades del espacio",
+      "invocationName": "que tal la casa",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,12 +16,12 @@
           "samples": []
         },
         {
-          "name": "GetNewFactIntent",
+          "name": "GetHomeStatusIntent",
           "slots": [],
           "samples": [
-            "un dato",
-            "un dato del espacio",
-            "dime un dato",
+            "que tal la casa",
+            "como esta todo",
+            "todo bien",
             "dime un dato del espacio",
             "dame un dato",
             "dame un dato del espacio",
