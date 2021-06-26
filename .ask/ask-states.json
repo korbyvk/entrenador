@@ -2,11 +2,14 @@
   "askcliStatesVersion": "2020-03-31",
   "profiles": {
     "default": {
-      "skillId": "",
+      "skillId": "amzn1.ask.skill.5c78f298-936f-4601-891d-48d82d000ee6",
       "skillInfrastructure": {
-        "@ask-cli/cfn-deployer": {
+        "@ask-cli/lambda-deployer": {
           "deployState": {}
         }
+      },
+      "skillMetadata": {
+        "lastDeployHash": "biWv3lRdeyzpbfUC+YCROKSYo6w="
       }
     }
   }
