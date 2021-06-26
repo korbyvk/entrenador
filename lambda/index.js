@@ -37,7 +37,7 @@ const GetNewFactHandler = {
     const speakOutput = requestAttributes.t('GET_FACT_MESSAGE') + randomFact;
 
     return handlerInput.responseBuilder
-      .speak(speakOutput)
+      .speak('probando 123 probando')
       // Uncomment the next line if you want to keep the session open so you can
       // ask for another fact without first re-opening the skill
       // .reprompt(requestAttributes.t('HELP_REPROMPT'))
@@ -55,7 +55,7 @@ const HelpHandler = {
   handle(handlerInput) {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak('bien')
+      .speak(requestAttributes.t('HELP_MESSAGE'))
       .reprompt(requestAttributes.t('HELP_REPROMPT'))
       .getResponse();
   },
