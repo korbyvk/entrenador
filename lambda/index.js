@@ -25,8 +25,7 @@ const GetNewFactHandler = {
     const request = handlerInput.requestEnvelope.request;
     // checks request type
     return request.type === 'LaunchRequest'
-      || (request.type === 'IntentRequest'
-        && request.intent.name === 'GetNewFactIntent');
+      || (request.type === 'IntentRequest');
   },
   handle(handlerInput) {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
@@ -169,6 +168,27 @@ exports.handler = skillBuilder
 // It is organized by language/locale.  You can safely ignore the locales you aren't using.
 // Update the name and messages to align with the theme of your skill
 
+const esesData = {
+  translation: {
+    SKILL_NAME: 'Informe general de casa',
+    GET_FACT_MESSAGE: 'Aqui va: ',
+    HELP_MESSAGE: 'Puedes preguntarme si hay algo por hacer o, cerrar la skill. ¿Cómo te puedo ayudar?',
+    HELP_REPROMPT: '¿Qué necesitas?',
+    FALLBACK_MESSAGE: 'no tengo respuesta para eso pero, puedo contarte cosas guays sobre el espacio. ¡Pregúntame algo!',
+    FALLBACK_REPROMPT: 'Puedo hablarte de la casa y controlarla en cierta medida ¿Qué quieres saber?',
+    ERROR_MESSAGE: 'Disculpa, ha habido un error.',
+    STOP_MESSAGE: '¡Hasta luego!',
+    FACTS:
+      [
+        'Tenemos un gatito muy travieso.',
+        'La casa es muy pequeñita, asi que hay que mantenerla limpia, que es fácil.',
+        'Estoy un poco loca, pero es cuestión de qie daniel me ajuste bien.',
+        'Estoy segura de que voy a ser de mucha utilidad.',
+        'Mon es muy malo, muerde mis cables.',
+      ],
+  },
+};
+
 const deData = {
   translation: {
     SKILL_NAME: 'Weltraumwissen',
@@ -268,26 +288,7 @@ const esData = {
   },
 };
 
-const esesData = {
-  translation: {
-    SKILL_NAME: 'Datos Espaciales',
-    GET_FACT_MESSAGE: 'Aqui va: ',
-    HELP_MESSAGE: 'Puedes preguntarme un dato interesante del espacio, o, cerrar la skill. ¿Cómo te puedo ayudar?',
-    HELP_REPROMPT: '¿Qué necesitas?',
-    FALLBACK_MESSAGE: 'no tengo respuesta para eso pero, puedo contarte cosas guays sobre el espacio. ¡Pregúntame algo!',
-    FALLBACK_REPROMPT: 'Puedo hablarte del espacio ¿Qué quieres saber?',
-    ERROR_MESSAGE: 'Disculpa, ha habido un error.',
-    STOP_MESSAGE: '¡Hasta luego!',
-    FACTS:
-      [
-        'Un año en Mercurio solo dura 88 días.',
-        'Apesar de estar mas lejos que el sol, Venus es mas caliente que Mercurio.',
-        'Visto desde marte, el sol parece ser la mitad del tamaño que vemos desde la tierra.',
-        'Júpiter tiene los días mas cortos de todos los planetas de nuestro sistema solar.',
-        'El sol es casi una esfera perfecta.',
-      ],
-  },
-};
+
 
 const esmxData = {
   translation: {
